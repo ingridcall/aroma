@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faça Sua Reserva</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center; /* Centraliza horizontalmente */
+            align-items: center; /* Centraliza verticalmente */
+            height: 100vh; /* Altura total da janela */
+            background-color: #f4f4f4; /* Fundo claro para contraste */
+        }
+        .form-container {
+            background-color: white; /* Fundo branco para o formulário */
+            padding: 20px;
+            border-radius: 8px; /* Bordas arredondadas */
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+            width: 300px; /* Largura fixa para o formulário */
+        }
+        h1 {
+            text-align: center;
+        }
+        label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+        input, select {
+            width: calc(100% - 20px); /* Largura com margem interna */
+            padding: 10px;
+            margin-bottom: 15px;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #007BFF; /* Cor do botão */
+            color: white;
+            border: none;
+            border-radius: 5px; /* Bordas arredondadas do botão */
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3; /* Cor do botão ao passar o mouse */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="form-container">
+        <h1>Faça Sua Reserva</h1>
+
+        <form action="#" method="post">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="data">Data da Reserva:</label>
+            <input type="date" id="data" name="data" required>
+
+            <label for="hora">Hora da Reserva:</label>
+            <input type="time" id="hora" name="hora" required>
+
+            <label for="pessoas">Número de Pessoas:</label>
+            <select id="pessoas" name="pessoas" required>
+                <option value="">Selecione</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5+</option>
+            </select>
+
+            <button type="submit">Enviar Reserva</button>
+        </form>
+    </div>
+
+</body>
+</html>
